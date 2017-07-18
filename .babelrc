@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": true
+      },
+      "loose": true
+    }]
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"]
+    }],
+    ["transform-react-jsx", { "pragma": "h" }],
+    "transform-decorators-legacy",
+    "transform-object-rest-spread",
+    "transform-class-properties"
+  ]
+}
