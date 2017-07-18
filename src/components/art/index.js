@@ -4,7 +4,7 @@ import timer from "hocs/timer"
 @timer
 export default class Art extends Component {
   static defaultProps = {
-    playSpeed: 70,
+    playSpeed: 100,
   }
 
   state = {

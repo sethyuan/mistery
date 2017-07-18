@@ -6,6 +6,5 @@ export default connect(({ game }) => ({
   whoStyles: {
     blue: true,
     bold: true,
-    italic: true,
   }
 }))(Line)

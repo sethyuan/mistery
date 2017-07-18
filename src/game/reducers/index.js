@@ -4,7 +4,7 @@ import {
 } from "game/actions"
 
 const initialState = {
-  playerName: null,
+  playerName: "",
 }
 
 const handlers = {

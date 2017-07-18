@@ -5,6 +5,5 @@ export default connect(() => ({
   whoStyles: {
     yellow: true,
     bold: true,
-    italic: true,
   }
 }))(Line)

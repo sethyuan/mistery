@@ -1,4 +1,4 @@
-import { h, Component, Text, span } from "ink"
+import { h, Component, Text, div, span } from "ink"
 import Input from "ink-text-input"
 import timer from "hocs/timer"
 
@@ -22,7 +22,7 @@ export default class Line extends Component {
     const { whoInd, textInd, showRet } = this.state
 
     return (
-      <span>
+      <div>
         {who
           ? <Text {...whoStyles}>{who.substring(0, whoInd)}</Text>
           : null
@@ -38,7 +38,7 @@ export default class Line extends Component {
             </span>
           : null
         }
-      </span>
+      </div>
     )
   }
 
