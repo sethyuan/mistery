@@ -14,13 +14,16 @@ export default class Art extends Component {
   render() {
     const { text } = this.props
     const { ind } = this.state
+    const color = this.props.color && {
+      [this.props.color]: true,
+    }
     const lines = text.slice(0, ind)
 
     return (
       <div>
       {lines.map(line => (
         <div>
-          <Text cyan>{line}</Text>
+          <Text {...color}>{line}</Text>
         </div>
       ))}
       </div>

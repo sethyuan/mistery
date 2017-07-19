@@ -18,8 +18,9 @@ export default class Line extends Component {
   }
 
   render() {
-    const { who, text, whoStyles, onEnd } = this.props
+    const { text, whoStyles, onEnd } = this.props
     const { whoInd, textInd, showRet } = this.state
+    const who = this.props.who && `${this.props.who}: `
 
     return (
       <div>
@@ -51,8 +52,9 @@ export default class Line extends Component {
   }
 
   next = () => {
-    const { who, text, playSpeed, setTimeout, retToggleSpeed } = this.props
+    const { text, playSpeed, setTimeout, retToggleSpeed } = this.props
     const { whoInd, textInd, showRet} = this.state
+    const who = this.props.who && `${this.props.who}: `
 
     if (whoInd <= who.length) {
       setTimeout(() => {

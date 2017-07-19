@@ -10,7 +10,7 @@ const initialState = {
 const handlers = {
   [SET_PLAYER_NAME](state, { name }) {
     return update(state, {
-      playerName: { $set: `${name}: ` }
+      playerName: { $set: `${name}` }
     })
   },
 }
